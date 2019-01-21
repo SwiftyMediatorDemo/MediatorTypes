@@ -1,11 +1,12 @@
 import SwiftyMediator
 
-enum ModuleAMediatorType: MediatorTargetType {
+public enum ModuleAMediatorType: MediatorTargetType {
     case home(title: String)
     case detail(id: Int)
 }
 
-enum ModuleBMediatorType: MediatorTargetType {
+public enum ModuleBMediatorType: MediatorTargetType {
     case personal(color: UIColor)
+    case showAlert(title: String, message: String)
 }
 
