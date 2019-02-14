@@ -10,3 +10,15 @@ public enum ModuleBMediatorType: MediatorTargetType {
     case showAlert(title: String, message: String)
 }
 
+extension ModuleAMediatorType: MediatorRoutable {
+    public init?(url: URLConvertible) {
+        switch url.pattern {
+        case "sy://home":
+            self = .home(title: url.queryParameters["title"] ?? "default")
+        case "sy://detail":
+            self = .detail(id: 1)
+        default:
+            return nil
+        }
+    }
+}
