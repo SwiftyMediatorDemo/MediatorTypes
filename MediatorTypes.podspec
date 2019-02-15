@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = 'MediatorTypes'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.summary      = 'MediatorTypes.'
 
   s.description  = <<-DESC
@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MediatorTypes/Classes/**/*'
 
-  s.dependency 'SwiftyMediator'
+  s.dependency 'SwiftyMediator/Routable'
 
 end
