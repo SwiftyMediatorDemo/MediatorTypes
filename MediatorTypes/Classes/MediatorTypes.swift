@@ -10,6 +10,7 @@ public enum ModuleBMediatorType: MediatorTargetType {
     case showAlert(title: String, message: String)
 }
 
+// 做动态化时才需要实现，不使用url定义的话这部分不需要实现
 extension ModuleAMediatorType: MediatorRoutable {
     public init?(url: URLConvertible) {
         switch url.pattern {
